@@ -1,0 +1,26 @@
+<table>
+    <tr>
+        <th>ProductCode</th>
+        <th>ProductName</th>
+        <th>CategoryID</th>
+        <th>ProductDescription</th>
+        <th>ProductPrice</th>
+        <th>Brand</th>
+        <th>Quantity</th>
+        <th>Instock</th>
+        <th>ImageID</th>
+        <th>RetailerID</th>
+    </tr>
+    <tr *ngFor="let p of products;let i=index">
+        <td>{{p.ProductCode}}</td>
+        <td>{{p.ProductName}}</td>
+        <td>{{p.CategoryID}}</td>
+        <td>{{p.ProductDescription}}</td>
+        <td>{{p.ProductPrice}}</td>
+        <td>{{p.Brand}}</td>
+        <td>{{p.Quantity}}</td>
+        <td>{{p.InStock}}</td>
+        <td>{{p.ImageID}}</td>
+        <td>{{p.RetailerID}}</td>
+    </tr>
+</table>
